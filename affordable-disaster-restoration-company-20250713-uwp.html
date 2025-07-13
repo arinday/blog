@@ -1,74 +1,239 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Blog Post</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affordable Disaster Restoration Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .floating-phone {
+            background: linear-gradient(135deg, #ff6b6b, #e53e3e);
+            color: white;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .floating-phone:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+        @media (min-width: 768px) {
+            .floating-phone {
+                display: none;
+            }
+        }
+        .hero-section {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #ff6b6b, #e53e3e);
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .cta-button:hover {
+            background: linear-gradient(135deg, #e53e3e, #c53030);
+            transform: translateY(-2px);
+        }
+        .section-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-3px);
+        }
+        .content-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
-<body>
-    <h1>Affordable Disaster Restoration Company</h1>
-    <div>
-        <h1>Affordable Disaster Restoration Company: Your Trusted Partner in Crisis</h1>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">Affordable Disaster Restoration</h1>
+            <a href="tel:+18775596432" class="cta-button text-white px-6 py-2 rounded-md font-medium text-sm md:text-base">Call Now: (877) 559-6432</a>
+        </div>
+    </header>
 
-        <p>When disaster strikes, whether it's a burst pipe, a raging fire, or a devastating storm, the aftermath can be overwhelming. The urgency to restore your property to its pre-loss condition is paramount, but the costs can often add to the stress. That's where an <strong>affordable disaster restoration company</strong> comes in—providing high-quality services like <strong>water damage restoration</strong>, <strong>fire damage repair</strong>, <strong>mold removal</strong>, <strong>storm damage restoration</strong>, and <strong>emergency cleanup service</strong> without breaking the bank.</p>
+    <!-- Hero Section -->
+    <section class="hero-section relative">
+        <img src="https://imgallery.llsvr.com/joinasap.687341dae4c4c.png" alt="Disaster Restoration Hero" class="w-full h-64 md:h-96 object-cover">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">Your Trusted Disaster Restoration Partner</h2>
+                <p class="text-base md:text-lg mb-6 max-w-xl mx-auto">Fast, affordable, and professional restoration services available 24/7 nationwide.</p>
+                <a href="tel:+18775596432" class="cta-button text-white px-6 md:px-8 py-3 rounded-md text-base md:text-lg font-medium">Emergency? Call (877) 559-6432</a>
+            </div>
+        </div>
+    </section>
 
-        <p>In this comprehensive guide, we'll explore the critical services offered by restoration companies, why affordability matters, and how to choose the right provider for your needs.</p>
+    <!-- Floating Phone Icon (Mobile Only) -->
+    <a href="tel:+18775596432" class="floating-phone md:hidden">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.756a1 1 0 01.894.553L8.38 8.447a1 1 0 01-.112.813l-1.69 2.532a9.958 9.958 0 005.058 5.058l2.532-1.69a1 1 0 01.813-.112l5.894 1.928a1 1 0 01.553.894V17a1 1 0 01-1 1h-14a1 1 0 01-1-1V3zm3 1v12h10.894l-4.553-1.488-2.532 1.69a7.963 7.963 0 01-4.81-4.81l1.69-2.532L4.553 4.106H5z"></path>
+        </svg>
+    </a>
 
-        <h2>Understanding Disaster Restoration Services</h2>
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 content-section">
+        <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800 text-center">Affordable Disaster Restoration Company: Comprehensive Recovery Solutions</h1>
+        
+        <p class="mb-4 text-gray-700">Disasters can strike at any moment—whether it’s a burst pipe flooding your home, a fire leaving behind soot and destruction, a storm tearing through your property, or mold creeping into your walls. The aftermath is overwhelming, and the costs of recovery can add to the stress. At our <strong>affordable disaster restoration company</strong>, we specialize in <a href="#water-damage" class="text-blue-600 hover:underline">water damage restoration</a>, <a href="#fire-damage" class="text-blue-600 hover:underline">fire damage repair</a>, <a href="#mold-removal" class="text-blue-600 hover:underline">mold removal</a>, <a href="#storm-damage" class="text-blue-600 hover:underline">storm damage restoration</a>, and <a href="#emergency-cleanup" class="text-blue-600 hover:underline">emergency cleanup services</a>. Our mission is to provide high-quality, cost-effective solutions to restore your property and peace of mind.</p>
 
-        <p>Disaster restoration encompasses a wide range of services designed to mitigate damage and restore properties after catastrophic events. Below, we break down the most common services you may need:</p>
+        <p class="mb-6 text-gray-700">In this comprehensive guide, we’ll explore our services, the importance of affordability, how to choose a reliable restoration partner, and what to expect during the restoration process. For immediate assistance, call <a href="tel:+18775596432" class="text-blue-600 hover:underline">(877) 559-6432</a>.</p>
 
-        <h3>1. Water Damage Restoration</h3>
-        <p>Water damage is one of the most common and destructive issues homeowners and businesses face. Whether caused by flooding, leaks, or plumbing failures, standing water can lead to structural damage, mold growth, and health hazards.</p>
+        <h2 class="text-2xl font-bold mb-4 text-gray-800" id="services">Our Disaster Restoration Services</h2>
+        <p class="mb-4 text-gray-700">Disaster restoration is a specialized field requiring expertise, advanced equipment, and a commitment to quality. Below, we detail our core services, each designed to address specific types of damage with precision and care.</p>
 
-        <p>An <strong>affordable disaster restoration company</strong> will:</p>
-        <ul>
-            <li>Extract standing water using industrial-grade pumps and vacuums.</li>
-            <li>Dry and dehumidify affected areas to prevent secondary damage.</li>
-            <li>Sanitize and restore belongings, including carpets, furniture, and drywall.</li>
-            <li>Identify hidden moisture pockets to avoid long-term issues like mold.</li>
+        <div class="section-card p-6 mb-6">
+            <h3 class="text-xl font-semibold mb-3 text-gray-800" id="water-damage">1. Water Damage Restoration</h3>
+            <p class="mb-4 text-gray-700">Water damage is one of the most common and destructive issues property owners face. Whether caused by flooding, burst pipes, or leaks, standing water can weaken structures, ruin belongings, and foster <a href="#mold-removal" class="text-blue-600 hover:underline">mold growth</a>. Our <a href="#water-damage" class="text-blue-600 hover:underline">water damage restoration</a> services are designed to act quickly and thoroughly to minimize damage.</p>
+            <ul class="list-disc pl-6 mb-4 text-gray-700">
+                <li><strong>Water Extraction:</strong> Using industrial-grade pumps and vacuums to remove standing water efficiently.</li>
+                <li><strong>Drying and Dehumidification:</strong> Employing high-powered fans and dehumidifiers to prevent secondary damage.</li>
+                <li><strong>Sanitization:</strong> Cleaning and restoring items like carpets, furniture, and drywall to safe conditions.</li>
+                <li><strong>Moisture Detection:</strong> Utilizing advanced tools to identify hidden water pockets, preventing long-term issues like mold.</li>
+            </ul>
+            <p class="mb-4 text-gray-700">Delaying water damage restoration can lead to costly repairs and health risks. Our <a href="#emergency-cleanup" class="text-blue-600 hover:underline">emergency cleanup services</a> are available 24/7—call <a href="tel:+18775596432" class="text-blue-600 hover:underline">(877) 559-6432</a> for immediate help.</p>
+            <div class="text-center">
+                <a href="tel:+18775596432" class="cta-button text-white px-6 py-3 rounded-md font-medium">Get Help with Water Damage: (877) 559-6432</a>
+            </div>
+        </div>
+
+        <div class="section-card p-6 mb-6">
+            <h3 class="text-xl font-semibold mb-3 text-gray-800" id="fire-damage">2. Fire Damage Repair</h3>
+            <p class="mb-4 text-gray-700">Fires cause extensive damage, leaving behind charred structures, smoke, soot, and toxic residues that require professional attention. Our <a href="#fire-damage" class="text-blue-600 hover:underline">fire damage repair</a> services address both visible and hidden damage to restore your property to its pre-loss condition.</p>
+            <ul class="list-disc pl-6 mb-4 text-gray-700">
+                <li><strong>Property Securing:</strong> Boarding up windows and tarping roofs to protect against further damage.</li>
+                <li><strong>Smoke and Soot Removal:</strong> Thoroughly cleaning walls, ceilings, and HVAC systems to remove harmful residues.</li>
+                <li><strong>Odor Elimination:</strong> Using advanced deodorization techniques to eliminate persistent smoke odors.</li>
+                <li><strong>Structural Repairs:</strong> Restoring electrical, plumbing, and other systems to full functionality.</li>
+            </ul>
+            <p class="mb-4 text-gray-700">Fire damage requires immediate action to prevent further deterioration. Contact us at <a href="tel:+18775596432" class="text-blue-600 hover:underline">(877) 559-6432</a> for <a href="#emergency-cleanup" class="text-blue-600 hover:underline">emergency cleanup services</a>.</p>
+            <div class="text-center">
+                <a href="tel:+18775596432" class="cta-button text-white px-6 py-3 rounded-md font-medium">Start Fire Damage Repair: (877) 559-6432</a>
+            </div>
+        </div>
+
+        <div class="section-card p-6 mb-6">
+            <h3 class="text-xl font-semibold mb-3 text-gray-800" id="mold-removal">3. Mold Removal</h3>
+            <p class="mb-4 text-gray-700">Mold thrives in damp environments, spreading rapidly and posing serious health risks, including allergies and respiratory issues. Our <a href="#mold-removal" class="text-blue-600 hover:underline">mold removal</a> services ensure complete eradication and long-term prevention.</p>
+            <ul class="list-disc pl-6 mb-4 text-gray-700">
+                <li><strong>Inspection:</strong> Using advanced tools to identify mold sources and affected areas.</li>
+                <li><strong>Containment:</strong> Preventing spores from spreading to unaffected areas.</li>
+                <li><strong>Removal:</strong> Employing HEPA filtration and antimicrobial treatments to eliminate mold colonies.</li>
+                <li><strong>Prevention:</strong> Addressing moisture issues, such as leaks or poor ventilation, to prevent recurrence.</li>
+            </ul>
+            <p class="mb-4 text-gray-700">Mold can worsen quickly if not addressed properly. Call <a href="tel:+18775596432" class="text-blue-600 hover:underline">(877) 559-6432</a> to schedule expert <a href="#mold-removal" class="text-blue-600 hover:underline">mold removal</a> services.</p>
+            <div class="text-center">
+                <a href="tel:+18775596432" class="cta-button text-white px-6 py-3 rounded-md font-medium">Remove Mold Today: (877) 559-6432</a>
+            </div>
+        </div>
+
+        <div class="section-card p-6 mb-6">
+            <h3 class="text-xl font-semibold mb-3 text-gray-800" id="storm-damage">4. Storm Damage Restoration</h3>
+            <p class="mb-4 text-gray-700">Storms, hurricanes, and tornadoes can cause widespread damage, from fallen trees to flooded interiors and structural damage. Our <a href="#storm-damage" class="text-blue-600 hover:underline">storm damage restoration</a> services help you recover quickly and efficiently.</p>
+            <ul class="list-disc pl-6 mb-4 text-gray-700">
+                <li><strong>Debris Removal:</strong> Safely clearing trees, branches, and other debris from your property.</li>
+                <li><strong>Water Extraction:</strong> Removing floodwater to prevent <a href="#mold-removal" class="text-blue-600 hover:underline">mold growth</a>.</li>
+                <li><strong>Structural Repairs:</strong> Fixing roofs, windows, and other damaged areas to restore integrity.</li>
+                <li><strong>Temporary Protection:</strong> Tarping and boarding to secure the property during repairs.</li>
+            </ul>
+            <p class="mb-4 text-gray-700">Storm damage demands urgent action to protect your property. Contact us at <a href="tel:+18775596432" class="text-blue-600 hover:underline">(877) 559-6432</a> for <a href="#emergency-cleanup" class="text-blue-600 hover:underline">emergency cleanup services</a>.</p>
+            <div class="text-center">
+                <a href="tel:+18775596432" class="cta-button text-white px-6 py-3 rounded-md font-medium">Restore After Storm Damage: (877) 559-6432</a>
+            </div>
+        </div>
+
+        <div class="section-card p-6 mb-6">
+            <h3 class="text-xl font-semibold mb-3 text-gray-800" id="emergency-cleanup">5. Emergency Cleanup Services</h3>
+            <p class="mb-4 text-gray-700">Disasters don’t wait for convenient times, which is why our <a href="#emergency-cleanup" class="text-blue-600 hover:underline">emergency cleanup services</a> operate 24/7 to address urgent needs from water, fire, mold, or storm damage.</p>
+            <ul class="list-disc pl-6 mb-4 text-gray-700">
+                <li><strong>Rapid Response:</strong> Our team arrives on-site within hours to mitigate damage.</li>
+                <li><strong>Comprehensive Care:</strong> Handling all aspects of cleanup and restoration, from debris removal to sanitization.</li>
+                <li><strong>Insurance Coordination:</strong> Assisting with claims to streamline the process and reduce stress.</li>
+            </ul>
+            <p class="mb-4 text-gray-700">For immediate assistance, call <a href="tel:+18775596432" class="text-blue-600 hover:underline">(877) 559-6432</a> to access our <a href="#emergency-cleanup" class="text-blue-600 hover:underline">emergency cleanup services</a>.</p>
+            <div class="text-center">
+                <a href="tel:+18775596432" class="cta-button text-white px-6 py-3 rounded-md font-medium">24/7 Emergency Cleanup: (877) 559-6432</a>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">Why Choose an Affordable Disaster Restoration Company?</h2>
+        <p class="mb-4 text-gray-700">Disasters are stressful enough without the added burden of exorbitant repair costs. Our <strong>affordable disaster restoration company</strong> is committed to delivering high-quality services at competitive prices. Here’s why affordability matters:</p>
+        <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li><strong>Cost-Effective Solutions:</strong> We provide top-tier restoration without breaking the bank.</li>
+            <li><strong>Transparent Pricing:</strong> Clear, upfront estimates with no hidden fees.</li>
+            <li><strong>Insurance Assistance:</strong> We work with your insurance provider to maximize claims and minimize out-of-pocket costs.</li>
+            <li><strong>Certified Professionals:</strong> Our IICRC-certified technicians ensure industry-standard results.</li>
         </ul>
+        <p class="mb-4 text-gray-700">Don’t let costs delay your recovery. Call <a href="tel:+18775596432" class="text-blue-600 hover:underline">(877) 559-6432</a> to discuss affordable restoration options tailored to your needs.</p>
 
-        <h3>2. Fire Damage Repair</h3>
-        <p>Fires leave behind more than just charred remains—they also produce smoke, soot, and toxic residues that require professional cleanup.</p>
-
-        <p>A reliable restoration team will:</p>
-        <ul>
-            <li>Secure the property to prevent further damage (boarding up windows, tarping roofs).</li>
-            <li>Remove smoke and soot from walls, ceilings, and ventilation systems.</li>
-            <li>Deodorize the space to eliminate lingering smoke odors.</li>
-            <li>Repair or reconstruct damaged structures, including electrical and plumbing systems.</li>
-        </ul>
-
-        <h3>3. Mold Removal</h3>
-        <p>Mold thrives in damp environments and can spread rapidly, posing serious health risks. Professional <strong>mold removal</strong> services are essential to ensure complete eradication.</p>
-
-        <p>Key steps include:</p>
-        <ul>
-            <li>Conducting a thorough inspection to identify mold sources.</li>
-            <li>Containing the affected area to prevent spores from spreading.</li>
-            <li>Using HEPA filtration and antimicrobial treatments to eliminate mold colonies.</li>
-            <li>Addressing moisture issues (e.g., leaks, poor ventilation) to prevent recurrence.</li>
-        </ul>
-
-        <h2>Why Affordability Matters in Disaster Restoration</h2>
-
-        <p>Facing a disaster is stressful enough without the added burden of exorbitant repair costs. An <strong>affordable disaster restoration company</strong> provides cost-effective solutions without compromising quality.</p>
-
-        <h2>The Restoration Process: What to Expect</h2>
-
-        <ol>
-            <li><strong>Initial Assessment</strong> – Technicians evaluate the damage and create a restoration plan.</li>
-            <li><strong>Mitigation</strong> – Immediate actions (e.g., water extraction, boarding up) to prevent further harm.</li>
-            <li><strong>Cleaning and Sanitizing</strong> – Removal of contaminants, odors, and hazardous materials.</li>
-            <li><strong>Restoration</strong> – Repairs and reconstruction to return the property to its original state.</li>
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">The Restoration Process: What to Expect</h2>
+        <p class="mb-4 text-gray-700">Understanding the restoration process helps set clear expectations. Our streamlined approach ensures efficiency and quality:</p>
+        <ol class="list-decimal pl-6 mb-4 text-gray-700">
+            <li><strong>Initial Assessment:</strong> Our technicians evaluate the damage and develop a customized restoration plan.</li>
+            <li><strong>Mitigation:</strong> Immediate actions, such as water extraction or boarding up, to prevent further harm.</li>
+            <li><strong>Cleaning and Sanitizing:</strong> Removing contaminants, odors, and hazardous materials to ensure safety.</li>
+            <li><strong>Restoration:</strong> Repairing and rebuilding your property to its pre-loss condition.</li>
         </ol>
+        <p class="mb-4 text-gray-700">Each step is designed to minimize disruption and restore your property quickly. Contact us at <a href="tel:+18775596432" class="text-blue-600 hover:underline">(877) 559-6432</a> to start the process.</p>
 
-        <h2>Conclusion</h2>
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">How to Choose the Right Restoration Company</h2>
+        <p class="mb-4 text-gray-700">Selecting a reliable restoration provider is critical for effective recovery. Here are key factors to consider:</p>
+        <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li><strong>Certifications:</strong> Ensure the company holds IICRC or similar credentials.</li>
+            <li><strong>Experience:</strong> Look for a proven track record in <a href="#water-damage" class="text-blue-600 hover:underline">water damage restoration</a>, <a href="#fire-damage" class="text-blue-600 hover:underline">fire damage repair</a>, and other services.</li>
+            <li><strong>24/7 Availability:</strong> Choose a provider offering <a href="#emergency-cleanup" class="text-blue-600 hover:underline">emergency cleanup services</a> for immediate response.</li>
+            <li><strong>Customer Reviews:</strong> Check for positive feedback from past clients to gauge reliability.</li>
+        </ul>
+        <p class="mb-4 text-gray-700">Our team meets and exceeds these standards. Call <a href="tel:+18775596432" class="text-blue-600 hover:underline">(877) 559-6432</a> to learn how we can help you recover.</p>
 
-        <p>Disasters are unpredictable, but your response doesn't have to be. By partnering with an <strong>affordable disaster restoration company</strong>, you gain access to expert <strong>water damage restoration</strong>, <strong>fire damage repair</strong>, <strong>mold removal</strong>, <strong>storm damage restoration</strong>, and <strong>emergency cleanup service</strong> at a fair price.</p>
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">Preventing Future Disasters</h2>
+        <p class="mb-4 text-gray-700">While our restoration services are top-notch, preventing future disasters is equally important. Here are some practical tips to protect your property:</p>
+        <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li><strong>Plumbing Maintenance:</strong> Regularly inspect pipes and fixtures to prevent <a href="#water-damage" class="text-blue-600 hover:underline">water damage</a>.</li>
+            <li><strong>Fire Safety Measures:</strong> Install smoke detectors and fire extinguishers to minimize <a href="#fire-damage" class="text-blue-600 hover:underline">fire damage</a>.</li>
+            <li><strong>Ventilation Improvements:</strong> Ensure proper airflow to reduce the risk of <a href="#mold-removal" class="text-blue-600 hover:underline">mold growth</a>.</li>
+            <li><strong>Storm Preparedness:</strong> Reinforce windows, roofs, and doors to protect against <a href="#storm-damage" class="text-blue-600 hover:underline">storm damage</a>.</li>
+        </ul>
+        <p class="mb-4 text-gray-700">For a professional property assessment to identify potential risks, contact us at <a href="tel:+18775596432" class="text-blue-600 hover:underline">(877) 559-6432</a>.</p>
 
-        <p>Don't let cost concerns delay critical repairs—act swiftly to protect your property and health. Research local providers, verify their credentials, and choose a team that balances quality with affordability. Your peace of mind is worth the investment.</p>
-    </div>
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">Nationwide Service Coverage</h2>
+        <p class="mb-4 text-gray-700">We proudly serve communities across the United States, offering <a href="#water-damage" class="text-blue-600 hover:underline">water damage restoration</a>, <a href="#fire-damage" class="text-blue-600 hover:underline">fire damage repair</a>, <a href="#mold-removal" class="text-blue-600 hover:underline">mold removal</a>, <a href="#storm-damage" class="text-blue-600 hover:underline">storm damage restoration</a>, and <a href="#emergency-cleanup" class="text-blue-600 hover:underline">emergency cleanup services</a> wherever you are. Our nationwide network ensures rapid response and consistent quality, no matter your location.</p>
+        <div class="section-card p-6 mb-6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/United_States_map_with_state_names.svg/800px-United_States_map_with_state_names.svg.png" alt="US Service Map" class="w-full h-auto rounded-md">
+            <p class="text-center mt-4 text-gray-700">Serving all 50 states with affordable, professional restoration services.</p>
+        </div>
+
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">Final Thoughts</h2>
+        <p class="mb-4 text-gray-700">Disasters are unpredictable, but your recovery doesn’t have to be. Our <strong>affordable disaster restoration company</strong> provides expert <a href="#water-damage" class="text-blue-600 hover:underline">water damage restoration</a>, <a href="#fire-damage" class="text-blue-600 hover:underline">fire damage repair</a>, <a href="#mold-removal" class="text-blue-600 hover:underline">mold removal</a>, <a href="#storm-damage" class="text-blue-600 hover:underline">storm damage restoration</a>, and <a href="#emergency-cleanup" class="text-blue-600 hover:underline">emergency cleanup services</a> at prices that won’t strain your budget. Don’t let cost concerns delay critical repairs—act now to protect your property and health. Call <a href="tel:+18775596432" class="text-blue-600 hover:underline">(877) 559-6432</a> to speak with our team and start your recovery today.</p>
+        <div class="text-center">
+            <a href="tel:+18775596432" class="cta-button text-white px-6 py-3 rounded-md font-medium">Get Started Now: (877) 559-6432</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">© 2025 Affordable Disaster Restoration Company. All rights reserved.</p>
+            <p class="text-sm mt-2">Contact us at <a href="tel:+18775596432" class="text-red-300 hover:underline">(877) 559-6432</a> for 24/7 disaster restoration services.</p>
+        </div>
+    </footer>
 </body>
 </html>
